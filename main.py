@@ -21,7 +21,9 @@ def get_metadata(file_path):
 
 def load_pdf():
     file_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
-    tree.delete(*tree.get_children())  # Clear existing entries in the tree
+    tree.delete(*tree.get_children())  
+    
+    # Clear existing entries in the tree
     if file_path:
         metadata = get_metadata(file_path)
         if metadata:
