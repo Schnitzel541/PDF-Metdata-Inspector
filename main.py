@@ -35,7 +35,7 @@ def load_pdf():
 # Setting up the main application window
 app = tk.Tk()
 app.title("PDF Metadata Reader")
-app.geometry("400x300")
+app.geometry("400x400")
 
 # Frame to hold other widgets
 frame = ttk.Frame(app)
