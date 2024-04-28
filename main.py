@@ -35,7 +35,7 @@ def load_pdf():
 # Setting up the main application window
 app = tk.Tk()
 app.title("PDF Metadata Reader")
-app.geometry("400x400")
+app.geometry("800x600")
 
 # Frame to hold other widgets
 frame = ttk.Frame(app)
@@ -46,7 +46,7 @@ tree = ttk.Treeview(frame, columns=("Property", "Value"), show="headings")
 tree.heading("Property", text="Property")
 tree.heading("Value", text="Value")
 tree.column("Property", width=100, anchor="center")
-tree.column("Value", width=200, anchor="w")
+tree.column("Value", width=400, anchor="w")
 tree.pack(expand=True, fill='both')
 
 # Button to load PDF and display metadata
